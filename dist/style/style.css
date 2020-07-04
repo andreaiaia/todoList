@@ -17,6 +17,9 @@ body {
 a {
   color: white;
 }
+h2 {
+  text-align: center;
+}
 .primaryBtn {
   font-family: 'Kalam', cursive;
   font-size: 1rem;
@@ -28,6 +31,17 @@ a {
 button:hover {
   color: white;
   border: 1px solid white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li > * {
+  display: inline;
+}
+li > button {
+  background: rgba(0,0,0,0);
 }
 
 #main {
@@ -62,9 +76,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 2fr;
   padding: 0 10px;
 }
-#content > div {
-  padding-left: 1rem;
-}
+
 #projects {
   border-right: 1px solid black;
 }
