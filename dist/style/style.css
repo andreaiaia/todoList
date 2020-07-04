@@ -46,9 +46,15 @@ button:hover {
   text-align: center;
   line-height: .5;
 }
+#credits {
+  margin: 8px 8px 0 0;
+}
+#credits > * {
+  font-size: .8rem;
+}
 .contButton > button {
   margin-left: 1rem;
-  margin-top: 15%;
+  margin-top: 12%;
 }
 
 #content {
