@@ -29,6 +29,12 @@ h2 {
 h3 {
   margin: 0;
 }
+textarea {
+  font-family: 'Kalam', cursive;
+  resize: none;
+  background: rgb(240, 240, 185);
+  border: 1px solid rgba(0,0,0,.3);
+}
 button:hover {
   cursor: pointer;
 }
@@ -123,6 +129,8 @@ button.checked {
   grid-template-columns: 1fr 6fr 1fr;
   line-height: 1.2rem;
   margin: .5rem .5rem;
+}
+#detailTitle > button {
 }
 #dueDate {
   margin: 2rem 3rem 0;
