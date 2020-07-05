@@ -12,7 +12,7 @@ html {
   height: 100%;
 }
 body {
-  background: linear-gradient(var(--secondary-color), var(--tertiary-color));
+  background: linear-gradient(rgb(81,97,102), rgb(41,49,51));
 }
 a {
   color: white;
@@ -32,20 +32,8 @@ h3 {
 button:hover {
   cursor: pointer;
 }
-
-.primaryBtn {
-  font-family: 'Kalam', cursive;
-  font-size: 1rem;
-  background-color: var(--tertiary-color);
-  transition: .2s ease;
-  border-radius: 3px;
-  border: 1px solid var(--tertiary-color);
-}
-.primaryBtn:hover {
-  color: white;
-  border: 1px solid white;
-}
 ul {
+  overflow: scroll;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -53,6 +41,7 @@ ul {
 li {
   border-bottom: 3px solid black;
   padding: 5px 10px;
+  cursor: pointer;
 }
 li > * {
   display: inline;
@@ -103,28 +92,66 @@ button.checked {
 }
 
 #content {
-  min-height: 500px;
+  height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
 }
 
 #projects {
-  position: relative;
+  overflow: scroll;
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
   border-right: 2px solid black;
 }
+
 #newProject {
-  position: absolute;
-  bottom: 2%;
-  left: 22%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  border-radius: 0;
 }
 #todos {
-  position: relative;
+  overflow: scroll;
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
   border-right: 2px solid black;
 }
 #newTodo {
-  position: absolute;
-  bottom: 2%;
-  left: 22.5%;
+  border-radius: 0;
   font-size: 1.5rem;
+}
+#detailTitle {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  line-height: 1.2rem;
+  margin: .5rem .5rem;
+}
+#dueDate {
+  margin: 2rem 3rem 0;
+}
+#dueDate > * {
+  display: inline;
+}
+#priority {
+  margin: 1rem 3rem 0;
+}
+#priority > * {
+  display: inline;
+}
+#description {
+  margin: 1rem 3rem 0;
+}
+#notes {
+  margin: 2rem 3rem 0;
+}
+
+.primaryBtn {
+  font-family: 'Kalam', cursive;
+  font-size: 1rem;
+  background-color: var(--tertiary-color);
+  transition: .2s ease;
+  border-radius: 3px;
+  border: 1px solid var(--tertiary-color);
+}
+.primaryBtn:hover {
+  color: white;
+  border: 1px solid white;
 }
