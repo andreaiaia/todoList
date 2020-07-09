@@ -5,6 +5,7 @@
   --primary-color: rgb(78, 52, 26);
   --secondary-color: rgb(129, 86, 42);
   --tertiary-color: rgb(180, 119, 57);
+  --delete: rgb(223, 53, 53);
 }
 
 html {
@@ -76,7 +77,6 @@ button.checked {
   background-color: var(--primary-bg-color);
   box-shadow: 2px 10px 20px black;
 }
-
 #title {
   display: flex;
   justify-content: space-between;
@@ -102,14 +102,12 @@ button.checked {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
 }
-
 #projects {
   overflow: scroll;
   display: grid;
   grid-template-rows: 1fr 10fr 1fr;
   border-right: 2px solid black;
 }
-
 #newProject {
   font-size: 1.5rem;
   border-radius: 0;
@@ -130,7 +128,8 @@ button.checked {
   line-height: 1.2rem;
   margin: .5rem .5rem;
 }
-#detailTitle > button {
+#detailTitle > button > *{
+  font-size: 1rem;
 }
 #dueDate {
   margin: 2rem 3rem 0;
@@ -162,4 +161,14 @@ button.checked {
 .primaryBtn:hover {
   color: white;
   border: 1px solid white;
+}
+.mdi-delete {
+  font-size: 1.2rem;
+  background-color: var(--delete);
+}
+.dueDate {
+  font-family: 'Kalam', cursive;
+  font-size: 1rem;
+  background: rgb(240, 240, 185);
+  border: 1px solid rgba(0,0,0,.3);
 }
