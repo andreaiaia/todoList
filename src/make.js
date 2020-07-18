@@ -1,5 +1,3 @@
-// import dom stuff
-
 const todoFactory = (title, dueDate, priority, description, notes) => {
   const _title = title;
   const _dueDate = dueDate;
@@ -32,8 +30,6 @@ const todoFactory = (title, dueDate, priority, description, notes) => {
     editTitle,
   }
 }
-// const _newTodo = todoFactory((all the variables needed));
-// default[_newTodo] = _newTodo;
 
 const projectFactory = (title, color) => {
   const _title = title;
@@ -52,13 +48,11 @@ const projectFactory = (title, color) => {
     editColor,
   }
 }
-// const _newProject = projectFactory((all the variables needed));
-// database[_newProject] = _newProject;
 
-const database = {};
+export {todoFactory as makeTodo, projectFactory as makeProject}
 
-const _newProject = projectFactory('default', 'red');
-database["default"] = _newProject;
-
-const _newTodo = todoFactory("example", "15/08/2020", 5, "trying the functions", "please work!");
-database["default"]["_newTodo"] = _newTodo;
+// const database = {};
+// const _newProject = projectFactory('default', 'red');
+// database["default"] = _newProject;
+// const _newTodo = todoFactory((all the variables needed));
+// database["default"]["_newTodo"] = _newTodo;
