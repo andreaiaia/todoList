@@ -1,4 +1,5 @@
 import {makeTodo, makeProject} from "./make.js";
+import {makeQuery, deleteQuery} from "./DOM.js";
 
 const database = {};
 
@@ -9,8 +10,10 @@ const btnActions = () => {
   function action(e) {
     switch (e.target.name) {
       case "newProject":
-        database["newProject"] = makeProject("ciaone", "green");
-        console.log(database);
+        makeQuery();
+        //getTitleandColor(e);
+        //database["newProject"] = makeProject("ciaone", "green");
+        //console.log(database);
         break;
       case "newTodo":
 
@@ -24,6 +27,9 @@ const btnActions = () => {
       default:
         break;
     }
+  }
+  function getTitleandColor(e) {
+    //makeQuery();
   }
 }
 
